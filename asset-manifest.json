@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/infinityfrontend/static/css/main.f855e6bc.css",
-    "main.js": "/infinityfrontend/static/js/main.5afc75af.js",
+    "main.css": "/infinityfrontend/static/css/main.958d6783.css",
+    "main.js": "/infinityfrontend/static/js/main.d136e789.js",
     "static/js/592.a5ec3191.chunk.js": "/infinityfrontend/static/js/592.a5ec3191.chunk.js",
     "static/media/logo.svg": "/infinityfrontend/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/infinityfrontend/index.html",
-    "main.f855e6bc.css.map": "/infinityfrontend/static/css/main.f855e6bc.css.map",
-    "main.5afc75af.js.map": "/infinityfrontend/static/js/main.5afc75af.js.map",
+    "main.958d6783.css.map": "/infinityfrontend/static/css/main.958d6783.css.map",
+    "main.d136e789.js.map": "/infinityfrontend/static/js/main.d136e789.js.map",
     "592.a5ec3191.chunk.js.map": "/infinityfrontend/static/js/592.a5ec3191.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.5afc75af.js"
+    "static/css/main.958d6783.css",
+    "static/js/main.d136e789.js"
   ]
 }
