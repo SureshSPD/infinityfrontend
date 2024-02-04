@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/infinityfrontend/static/css/main.958d6783.css",
-    "main.js": "/infinityfrontend/static/js/main.d136e789.js",
-    "static/js/592.a5ec3191.chunk.js": "/infinityfrontend/static/js/592.a5ec3191.chunk.js",
-    "static/media/logo.svg": "/infinityfrontend/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/infinityfrontend/static/css/main.412b6a6d.css",
+    "main.js": "/infinityfrontend/static/js/main.0c0f6822.js",
+    "static/js/592.ec4da473.chunk.js": "/infinityfrontend/static/js/592.ec4da473.chunk.js",
+    "static/media/INFINITY COLOR LAB LOGO 8.png": "/infinityfrontend/static/media/INFINITY COLOR LAB LOGO 8.e2af40d4b81a81494eeb.png",
     "index.html": "/infinityfrontend/index.html",
-    "main.958d6783.css.map": "/infinityfrontend/static/css/main.958d6783.css.map",
-    "main.d136e789.js.map": "/infinityfrontend/static/js/main.d136e789.js.map",
-    "592.a5ec3191.chunk.js.map": "/infinityfrontend/static/js/592.a5ec3191.chunk.js.map"
+    "main.412b6a6d.css.map": "/infinityfrontend/static/css/main.412b6a6d.css.map",
+    "main.0c0f6822.js.map": "/infinityfrontend/static/js/main.0c0f6822.js.map",
+    "592.ec4da473.chunk.js.map": "/infinityfrontend/static/js/592.ec4da473.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.958d6783.css",
-    "static/js/main.d136e789.js"
+    "static/css/main.412b6a6d.css",
+    "static/js/main.0c0f6822.js"
   ]
 }
