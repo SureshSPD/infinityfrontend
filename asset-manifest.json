@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.412b6a6d.css",
-    "main.js": "/static/js/main.f17a8d9b.js",
+    "main.js": "/static/js/main.7ab12581.js",
     "static/js/592.ec4da473.chunk.js": "/static/js/592.ec4da473.chunk.js",
     "static/media/INFINITY COLOR LAB LOGO 8.png": "/static/media/INFINITY COLOR LAB LOGO 8.e2af40d4b81a81494eeb.png",
     "index.html": "/index.html",
     "main.412b6a6d.css.map": "/static/css/main.412b6a6d.css.map",
-    "main.f17a8d9b.js.map": "/static/js/main.f17a8d9b.js.map",
+    "main.7ab12581.js.map": "/static/js/main.7ab12581.js.map",
     "592.ec4da473.chunk.js.map": "/static/js/592.ec4da473.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.412b6a6d.css",
-    "static/js/main.f17a8d9b.js"
+    "static/js/main.7ab12581.js"
   ]
 }
