@@ -35,7 +35,7 @@ export const AddOrderDetails = () => {
         e.preventDefault();
     
         try {
-            const response = await axios.post('https://infinitycolorlabnodejs-b98a2e742923.herokuapp.com/users/add-order-details', formData, {
+            const response = await axios.post('https://backendinfinity-8b393b9bf8e9.herokuapp.com/users/add-order-details', formData, {
                 headers: {
                   'Content-Type': 'application/json',
                 },

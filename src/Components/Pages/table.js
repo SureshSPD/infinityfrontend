@@ -17,7 +17,7 @@ export const Table = () => {
 
     useEffect(() => {
       // Fetch order information when the component mounts
-      axios.get('https://infinitycolorlabnodejs-b98a2e742923.herokuapp.com/users/all-users')
+      axios.get('https://backendinfinity-8b393b9bf8e9.herokuapp.com/users/all-users')
         .then(response => {
             console.log("response",response)
           setOrderInformation(response.data.users);

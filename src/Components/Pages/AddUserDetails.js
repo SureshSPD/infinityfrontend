@@ -18,7 +18,7 @@ export const AddUserDetails = () => {
         e.preventDefault();
     
         try {
-            const response = await axios.post('https://infinitycolorlabnodejs-b98a2e742923.herokuapp.com/users/signup', formData, {
+            const response = await axios.post('https://backendinfinity-8b393b9bf8e9.herokuapp.com/users/signup', formData, {
                 headers: {
                   'Content-Type': 'application/json',
                 },
