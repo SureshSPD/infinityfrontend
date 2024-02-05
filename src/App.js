@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route path='/infinityfrontend' element={<Login/>}/>
+        <Route path='/' element={<Login/>}/>
       </Routes>
       <Routes>
         <Route path='/Home' element={<Home/>}/>

@@ -18,7 +18,7 @@ export const Navbar = () => {
       // Clear session storage
       sessionStorage.clear();
       // Redirect to the sign-in page
-      history('/infinityfrontend');
+      history('/');
     };
 
   return (
