@@ -1,24 +1,15 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Slidecontext } from '../Context/slidercontext';
 
-export const AddOrderDetails = () => {
+export const AddOrderDetails = ({formData,setFormData}) => {
 
   const {setInputDataSliderOpen}= useContext(Slidecontext)
  // Retrieve email from sessionStorage
   const storedEmail = sessionStorage.getItem("Emailid");
-    const [formData, setFormData] = useState({
-        email: storedEmail,
-        orderNumber: '',
-        date: new Date(),
-        salesPerson: '',
-        inchargePerson: '',
-        clientDetails: '',
-        deliveryDate: new Date(),
-        status: '',
-      });
+   
     
     const handleDateChange = (date) => {
         setFormData({ ...formData, date });
@@ -35,11 +26,14 @@ export const AddOrderDetails = () => {
         e.preventDefault();
     
         try {
+          
+          // const response = await axios.post('http://127.0.0.1:5000/users/add-order-details', formData, {
             const response = await axios.post('https://backendinfinity-8b393b9bf8e9.herokuapp.com/users/add-order-details', formData, {
                 headers: {
                   'Content-Type': 'application/json',
                 },
               });
+          console.log(response)
           // Reset the form data after successful submission
           setFormData({
             email: storedEmail,
@@ -50,15 +44,23 @@ export const AddOrderDetails = () => {
             clientDetails: '',
             deliveryDate: '',
             status: '',
+            printingstatus:'',
+            laminationstatus:'',
+            padmakingstatus:''
           });
           setInputDataSliderOpen(false);
+          window.location.reload(); // Reload the page
         } catch (error) {
           console.error('Error in submitting order details:', error);
         }
       };
 
+ 
+
+
+
     return (
-      <div className="flex justify-center items-center mt-32 w-full">
+      <div className="flex justify-center items-center mt-12 w-full">
         <form className="space-y-6 w-full" action="#" method="POST"  onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ml-3">
             {/* Order Number */}
@@ -178,6 +180,60 @@ export const AddOrderDetails = () => {
     <option value="Printing Section">Printing Section</option>
     <option value="Lamination Section">Lamination Section</option>
     <option value="Pad Making">Pad Making</option>
+  </select>
+            </div>
+            <div className="mb-4">
+              <label htmlFor="status" className="block text-sm font-medium leading-6 text-gray-900">
+                Printing Status
+              </label>
+              <select
+    id="status"
+    name="status"
+    required
+    value={formData.printingstatus}  // Set initial value
+    onChange={(e) => setFormData({ ...formData, printingstatus: e.target.value })}
+    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+  >
+    <option value="" disabled>Select status</option>
+    <option value="Not Started">Not Started</option>
+    <option value="In Progress">In Progress</option>
+    <option value="Completed">Completed</option>
+  </select>
+            </div>
+            <div className="mb-4">
+              <label htmlFor="status" className="block text-sm font-medium leading-6 text-gray-900">
+                Lamination Status
+              </label>
+              <select
+    id="status"
+    name="status"
+    required
+    value={formData.laminationstatus}  // Set initial value
+    onChange={(e) => setFormData({ ...formData, laminationstatus: e.target.value })}
+    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+  >
+    <option value="" disabled>Select status</option>
+    <option value="Not Started">Not Started</option>
+    <option value="In Progress">In Progress</option>
+    <option value="Completed">Completed</option>
+  </select>
+            </div>
+            <div className="mb-4">
+              <label htmlFor="status" className="block text-sm font-medium leading-6 text-gray-900">
+                Pad Making Status
+              </label>
+              <select
+    id="status"
+    name="status"
+    required
+    value={formData.padmakingstatus}  // Set initial value
+    onChange={(e) => setFormData({ ...formData, padmakingstatus: e.target.value })}
+    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+  >
+    <option value="" disabled>Select status</option>
+    <option value="Not Started">Not Started</option>
+    <option value="In Progress">In Progress</option>
+    <option value="Completed">Completed</option>
   </select>
             </div>
           </div>

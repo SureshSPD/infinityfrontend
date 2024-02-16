@@ -18,6 +18,8 @@ export const AddUserDetails = () => {
         e.preventDefault();
     
         try {
+          
+          // const response = await axios.post('http://127.0.0.1:5000/users/signup', formData, {
             const response = await axios.post('https://backendinfinity-8b393b9bf8e9.herokuapp.com/users/signup', formData, {
                 headers: {
                   'Content-Type': 'application/json',

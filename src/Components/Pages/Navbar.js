@@ -28,8 +28,15 @@ export const Navbar = () => {
         <a>
           <img className="w-20 h-18" src={logo} alt="Infinity" />
         </a>
+
         {/* Avatar Section */}
         <div className="items-center hidden lg:block">
+        <button
+               onClick={handleSignOut}
+                className="inline-block px-4 py-2 text-white duration-150 font-medium bg-zinc-500 rounded-lg hover:bg-zinc-700 active:bg-zinc-700 md:text-sm"
+            >
+                Sign Out
+            </button>
             <Dropdown
               arrowIcon={false}
               inline={true}
@@ -47,7 +54,7 @@ export const Navbar = () => {
                   {EmailId}
                 </span>
               </Dropdown.Header>
-              <Dropdown.Item  onClick={handleSignOut} ><span className="w-20">Sign out</span></Dropdown.Item>
+              <Dropdown.Item   ><span className="w-20">Sign out</span></Dropdown.Item>
             </Dropdown>
         </div>
         </div>
